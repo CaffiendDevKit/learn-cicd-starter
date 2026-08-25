@@ -12,7 +12,7 @@ func TestGetAPIKey(t *testing.T) {
 		headerVal  string // value to set for "Authorization" header; empty means don't set it
 		setHeader  bool
 		wantKey    string
-		wantErr    error // if non-nil, we expect errors.Is to match this
+		wantErr    error  // if non-nil, we expect errors.Is to match this
 		wantErrMsg string // if wantErr is nil but we still expect an error, check message text
 	}{
 		{
